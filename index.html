@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diário do Chorão</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+<h1>Diário do Chorão</h1>
+<p>"A atitude é o que te define."</p>
+
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#musicas">Músicas</a>
+<a href="#frases">Frases</a>
+<a href="#galeria">Fotos</a>
+<a href="#blog">Blog</a>
+<a href="#contato">Contato</a>
+</nav>
+</header>
+
+<div class="acessibilidade">
+<button onclick="aumentarFonte()">A+</button>
+<button onclick="diminuirFonte()">A-</button>
+<button onclick="alternarContraste()">Contraste</button>
+<button onclick="lerPagina()">🔊 Ler</button>
+</div>
+
+<section class="banner">
+<img src="imagens/chorao-capa.jpg" alt="Chorão">
+<h2>CHORÃO</h2>
+<span>1970 - 2013</span>
+</section>
+
+<div class="container">
+
+<section id="sobre" class="card">
+<h2>Sobre Chorão</h2>
+
+<p>
+Alexandre Magno Abrão, conhecido como Chorão,
+foi cantor, compositor e líder da banda Charlie Brown Jr.
+Tornou-se um dos maiores nomes do rock nacional.
+</p>
+</section>
+
+<section id="musicas" class="card">
+<h2>Trechos das músicas</h2>
+
+<ul>
+<li>“Dias de luta, dias de glória.”</li>
+<li>“Só os loucos sabem.”</li>
+<li>“Tudo que é bom dura tempo o bastante para se tornar inesquecível.”</li>
+</ul>
+</section>
+
+<section id="frases" class="card">
+<h2>Frase do Chorão</h2>
+
+<blockquote>
+"A gente vive por momentos,
+mas a gente só aprende mesmo é com as lembranças."
+</blockquote>
+</section>
+
+<section id="galeria" class="card">
+<h2>Galeria</h2>
+
+<div class="galeria">
+<img src="imagens/chorao1.jpg">
+<img src="imagens/chorao2.jpg">
+<img src="imagens/chorao3.jpg">
+<img src="imagens/chorao4.jpg">
+<img src="imagens/chorao5.jpg">
+</div>
+</section>
+
+<section id="blog" class="card">
+<h2>Último Post</h2>
+
+<h3>O Chorão e a verdade nas letras</h3>
+
+<p>
+Suas músicas marcaram gerações por abordarem
+sentimentos, dificuldades e experiências reais.
+</p>
+
+<div class="reacoes">
+
+<button id="likeBtn">
+❤️ Curtir
+</button>
+
+<span id="likes">0</span>
+
+<button id="dislikeBtn">
+👎 Não gostei
+</button>
+
+<span id="dislikes">0</span>
+
+</div>
+
+<div class="comentarios">
+
+<h3>Comentários</h3>
+
+<input
+type="text"
+id="comentarioInput"
+placeholder="Digite seu comentário">
+
+<button onclick="adicionarComentario()">
+Comentar
+</button>
+
+<ul id="listaComentarios"></ul>
+
+</div>
+</section>
+
+<section id="contato" class="card">
+<h2>Conecte-se</h2>
+
+<p>📸 Instagram</p>
+<p>▶️ YouTube</p>
+<p>🎧 Spotify</p>
+</section>
+
+</div>
+
+<button id="topo">⬆</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
